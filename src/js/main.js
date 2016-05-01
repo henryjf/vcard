@@ -33,11 +33,11 @@ var url = 'https://api.github.com/users/henryjf';
   function cardTemplate(name, login, email){
     return `
       <ul>
-        <li>Name: ${name}</li>
-        <li>Github URL ${login}</li>
-        <li>Email: ${email}</li>
-        <li>Company: n/a</li>
-        <li>Website: n/a</li>
+        <li>Name:  </li> ${name}<br>
+        <li>Github URL  </li> <a href="#">${login}</a> <br>
+        <li>Email: </li>  ${email}<br>
+        <li>Company: </li> n/a <br>
+        <li>Website:</li>  n/a
       </ul>
     `
 };
