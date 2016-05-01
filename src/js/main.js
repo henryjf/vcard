@@ -2,14 +2,14 @@
 import $ from 'jquery';
 
 //accesses github token for more refreshes
-import token from './gihub-token';
-
-
-$.ajaxSetup({
-  headers: {
-    Authorization: "token " + token
-  }
-});
+// import token from './gihub-token';
+//
+//
+// $.ajaxSetup({
+//   headers: {
+//     Authorization: "token " + token
+//   }
+// });
 
 //this is a variable that contains a string which accesses the github api
 var url = 'https://api.github.com/users/henryjf';
@@ -32,7 +32,7 @@ var card = function(info){
 
 //
 $.getJSON(url, function (res) {
-  
+
 
 
   console.log(res);
