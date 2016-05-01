@@ -1,7 +1,18 @@
 
 .container {
+  max-width: 400px;
   color: #B3B3B3;
+  position: relative;
+
+header {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 24px;
 }
+
 li {
   list-style: none;
   color: #6AA2A2;
@@ -11,4 +22,14 @@ li {
   }
 }
 .sidebar{
+}
+
+img {
+  width: 110px;
+  border-radius: 55px;
+  position: absolute;
+  top: 80px;
+  right: 5px;
+}
+
 }

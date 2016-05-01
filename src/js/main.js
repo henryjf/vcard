@@ -24,10 +24,13 @@ var url = 'https://api.github.com/users/henryjf';
     // console.log(res.login);
     var email = res.email;
     // console.log(res.email);
+    var avatar = res.avatar_url;
+    // console.log(photo);
 
     var html = cardTemplate(name, login, email);
+    var pic = photoTemplate(avatar);
     $('.container').append(html);
-  });
+    $('.container').append(pic);
 
 
   function cardTemplate(name, login, email){
@@ -41,3 +44,10 @@ var url = 'https://api.github.com/users/henryjf';
       </ul>
     `
 };
+
+function photoTemplate(photo) {
+  return `
+  <img src="${avatar}">
+  `
+};
+});
