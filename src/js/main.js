@@ -1,45 +1,48 @@
-// accesses jquery
+
 import $ from 'jquery';
 
 //accesses github token for more refreshes
-import token from './gihub-token';
+// import token from './gihub-token';
 
 
-$.ajaxSetup({
-  headers: {
-    Authorization: "token " + token
-  }
-});
+// $.ajaxSetup({
+//   headers: {
+//     Authorization: "token " + token
+//   }
+// });
 
 //this is a variable that contains a string which accesses the github api
 var url = 'https://api.github.com/users/henryjf';
 
 //var named card  the info function
-var card = function(info){
-  return `
 
+  $.getJSON(url, function (res) {
 
-    <ul>
-      <li>Name:${info.name}</li>
-      <li>Github URL${info.url}</li>
-      <li>Email:${info.email}</li>
-      <li>Company: n/a</li>
-      <li>Website: n/a</li>
-    </ul>
-  `
-  // console.log(info.Name);
-};
+    var name = res.name;
+    // console.log(res.name);
+    var login = res.login;
+    // console.log(res.login);
+    var email = res.email;
+    // console.log(res.email);
 
-//
-$.getJSON(url, function (res) {
-  
-
-
-  console.log(res);
-
-    var html = card(info);
+    var html = cardTemplate(name, login, email);
     $('.container').append(html);
   });
+
+
+  function cardTemplate(name, login, email){
+    return `
+      <ul>
+        <li>Name: ${name}</li>
+        <li>Github URL ${login}</li>
+        <li>Email: ${email}</li>
+        <li>Company: n/a</li>
+        <li>Website: n/a</li>
+      </ul>
+    `
+};
+
+
 
 
 
