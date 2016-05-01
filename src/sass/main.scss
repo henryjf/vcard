@@ -3,9 +3,12 @@
   max-width: 400px;
   color: #B3B3B3;
   position: relative;
+  margin: 0 10px;
+  background-color: #EAE9EA;
+
 
 header {
-  width: 100%;
+  width: 400px;
   padding: 20px;
   text-align: center;
   background-color: black;
@@ -13,23 +16,44 @@ header {
   font-size: 24px;
 }
 
+h3 {
+  border: 1px solid red;
+  color: black;
+  padding-left: 15px;
+}
+
 li {
+  padding-left: 15px;
   list-style: none;
   color: #6AA2A2;
   display:inline-block;
   name {
     color: #B3B3B3;
   }
-}
-.sidebar{
+//   .sidebar{
+//     padding: 15px 35px 15px 25px;
+//
+//     h3 { padding-right: 25px;}
+//
+// }
+
 }
 
 img {
   width: 110px;
   border-radius: 55px;
   position: absolute;
-  top: 80px;
-  right: 5px;
+  top: 95px;
+  right: 15px;
+}
+
+.main {
+  width: 100%;
+  position: absolute;
+  padding: 20px;
+  top: 215px;
+  left: 0px;
+  background-color: #EAE9EA;
 }
 
 }
