@@ -1,15 +1,17 @@
 
 .container {
-  max-width: 400px;
+  max-width: 500px;
   color: #B3B3B3;
+  margin:auto;
   position: relative;
-  margin: 0 10px;
+  padding: 0 10px;
   background-color: #F3F3F3;
   font-size: 14px;
 
 
 header {
-  width: 100%x;
+  width: 100%;
+  // margin: 0;
   padding: 20px;
   text-align: center;
   background-color: black;
@@ -20,8 +22,8 @@ header {
 h3 {
   font-size: 16px;
   color: black;
-  padding-right: 15px;
-  margin-right:40px;
+  // padding-left: 15px;
+  // margin-right:40px;
 }
 
 li {
@@ -36,7 +38,7 @@ li {
   }
 }
   .sidebar{
-    width: 500px;
+    // width: 500px;
     padding: 20px;
   }
 
@@ -46,12 +48,32 @@ img {
   border-radius: 55px;
   position: absolute;
   top: 105px;
-  right: 30px;
+  right: 10%;
 }
 
 .main {
   width: 80%;
   padding: 20px;
+  border-top: 1px solid #B3B3B3;
   background-color: #F3F3F3;
 }
+}
+@media screen and (min-width: 500px){
+
+  .container {
+    max-width: 800px;
+    font-size: 16px;
+    padding: 0 20px;
+
+    header {
+      margin: 0;
+      font-size: 26px;
+      width: 100%;
+    }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
 }

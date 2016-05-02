@@ -14,25 +14,22 @@ import $ from 'jquery';
 //this is a variable that contains a string which accesses the github api
 var url = 'https://api.github.com/users/henryjf';
 
-//var named card  the info function
-
-  $.getJSON(url, function (res) {
-
+//using ajax to access info to be displayed on only a section of the web page
+  $.getJSON(url).then (function (res) {
+//the following variables locate each object in the gh-api needed for the project
     var name = res.name;
-    // console.log(res.name);
     var login = res.login;
-    // console.log(res.login);
     var email = res.email;
-    // console.log(res.email);
     var avatar = res.avatar_url;
-    // console.log(photo);
 
+//naming functions to pass info back to the page
     var html = cardTemplate(name, login, email);
     var pic = photoTemplate(avatar);
+//using append to add info to the sidebar section of the page
     $('.sidebar').append(html);
     $('.sidebar').append(pic);
 
-
+//using functions to pass parameters into our template literals where they access the specific info for our page
   function cardTemplate(name, login, email){
     return `
 
