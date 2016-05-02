@@ -29,8 +29,8 @@ var url = 'https://api.github.com/users/henryjf';
 
     var html = cardTemplate(name, login, email);
     var pic = photoTemplate(avatar);
-    $('.container').append(html);
-    $('.container').append(pic);
+    $('.sidebar').append(html);
+    $('.sidebar').append(pic);
 
 
   function cardTemplate(name, login, email){
@@ -41,7 +41,7 @@ var url = 'https://api.github.com/users/henryjf';
         <li>Email: </li>  ${email}<br>
         <li>Company: </li> n/a <br>
         <li>Website:</li>  n/a
-    
+
     `
 };
 

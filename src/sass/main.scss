@@ -4,11 +4,12 @@
   color: #B3B3B3;
   position: relative;
   margin: 0 10px;
-  background-color: #EAE9EA;
+  background-color: #F3F3F3;
+  font-size: 14px;
 
 
 header {
-  width: 400px;
+  width: 100%x;
   padding: 20px;
   text-align: center;
   background-color: black;
@@ -17,43 +18,40 @@ header {
 }
 
 h3 {
-  border: 1px solid red;
+  font-size: 16px;
   color: black;
-  padding-left: 15px;
+  padding-right: 15px;
+  margin-right:40px;
 }
 
 li {
-  padding-left: 15px;
+  font-size: 14px;
   list-style: none;
   color: #6AA2A2;
   display:inline-block;
+
   name {
+    font-size: 14px;
     color: #B3B3B3;
   }
-//   .sidebar{
-//     padding: 15px 35px 15px 25px;
-//
-//     h3 { padding-right: 25px;}
-//
-// }
-
 }
+  .sidebar{
+    width: 500px;
+    padding: 20px;
+  }
+
 
 img {
   width: 110px;
   border-radius: 55px;
   position: absolute;
-  top: 95px;
-  right: 15px;
+  top: 105px;
+  right: 30px;
 }
 
 .main {
-  width: 100%;
-  position: absolute;
+  width: 80%;
   padding: 20px;
-  top: 215px;
-  left: 0px;
-  background-color: #EAE9EA;
+  background-color: #F3F3F3;
 }
-
 }
