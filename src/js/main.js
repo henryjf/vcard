@@ -38,7 +38,6 @@ var url = 'https://api.github.com/users/henryjf';
         <li>Email: </li>  ${email}<br>
         <li>Company: </li> n/a <br>
         <li>Website:</li>  n/a
-
     `
 };
 

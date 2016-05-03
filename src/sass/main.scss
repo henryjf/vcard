@@ -2,7 +2,7 @@
 .container {
   max-width: 500px;
   color: #B3B3B3;
-  margin:auto;
+  margin: auto;
   position: relative;
   padding: 0 10px;
   background-color: #F3F3F3;
@@ -38,8 +38,7 @@ li {
   }
 }
   .sidebar{
-    // width: 500px;
-    padding: 20px;
+    padding: 20px 10px 20px 30px;
   }
 
 
@@ -63,17 +62,62 @@ img {
   .container {
     max-width: 800px;
     font-size: 16px;
-    padding: 0 20px;
+    // padding: 0 20px;
 
     header {
       margin: 0;
       font-size: 26px;
-      width: 100%;
+      width: 90%;
     }
 
   h3 {
     font-size: 18px;
   }
+  .sidebar{
+    padding: 20px 10px 20px 45px;
+  }
+
+  img {
+    right: 20%;
+  }
+
+  .main {
+    width: 80%;
+    padding: 20px 10px 20px 45px;
+    border-top: 1px solid #B3B3B3;
+    background-color: #F3F3F3;
+  }
 }
 
+}
+@media screen and (min-width: 850px){
+    .container {
+      max-width: 1000px;
+      font-size: 14px;
+      background-color: #F3F3F3;
+
+    .sidebar {
+      height: 300px;
+      float: left;
+      background-color: #F3F3F3;
+      padding-right: 20px;
+
+    }
+    img {
+      right: 15%;
+    }
+
+    .main {
+      width: 60%;
+      height: 300px;
+      float: left;
+      border-left: 1px solid black;
+
+      p {
+        width: 50%;
+      }
+    }
+
+
+    }
 }
